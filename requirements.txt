@@ -1,0 +1,6 @@
+voxcpm
+fastapi
+uvicorn[standard]
+soundfile
+pydub
+numpy

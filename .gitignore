@@ -1,0 +1,35 @@
+# Virtual environment
+myenv/
+
+# Generated audio output
+outputs/
+*.wav
+*.mp3
+*.ogg
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Env vars
+.env
+.env.*
+
+# macOS
+.DS_Store
+
+# IDEs
+.vscode/
+.idea/
+
+# Temp files
+*.tmp
+
+# Docker
+.docker/

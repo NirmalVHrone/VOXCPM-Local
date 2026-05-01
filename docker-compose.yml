@@ -1,0 +1,18 @@
+services:
+  tts:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./outputs:/app/outputs          # generated audio files land on host
+      - hf_cache:/root/.cache/huggingface  # model weights persist across restarts
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: all
+              capabilities: [gpu]
+
+volumes:
+  hf_cache:
